@@ -7,7 +7,8 @@
 
 ### 1. Placer le projet
 ```
-Copier le dossier benna/ dans C:/xampp/htdocs/benna/
+Copier le dossier dans:
+ C:\xampp\htdocs\benna_final2\benna_final\benafinal
 ```
 
 ### 2. Créer la base de données
