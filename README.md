@@ -1,9 +1,9 @@
-# 🌿 benna / Benna — Guide d'installation
+#  benna  — Guide d'installation
 ### Projet E-commerce PHP MVC · 5 acteurs · 2ème année Génie Logiciel
 
 ---
 
-## ⚡ Installation rapide (3 étapes)
+##  Installation rapide (3 étapes)
 
 ### 1. Placer le projet
 ```
@@ -23,7 +23,7 @@ http://localhost/benna/
 
 ---
 
-## 🔑 Comptes de démonstration (mot de passe : `password`)
+##  Comptes de démonstration (mot de passe : `password`)
 
 | Rôle | Email | Dashboard |
 |------|-------|-----------|
@@ -35,7 +35,7 @@ http://localhost/benna/
 
 ---
 
-## 📁 Architecture complète MVC
+## Architecture complète MVC
 
 ```
 benna/
@@ -123,7 +123,7 @@ benna/
 
 ---
 
-## 🗄️ Base de données — Tables
+##  Base de données — Tables
 
 | Table | Description |
 |-------|-------------|
@@ -144,7 +144,7 @@ benna/
 
 ---
 
-## 🔄 Flux complet d'une commande
+##  Flux complet d'une commande
 
 ```
 1. Client passe commande (panier.php)
@@ -159,14 +159,14 @@ benna/
         ↓
 6. Livreur confirme livraison → statut: livré
         ↓
-7. Client laisse un avis ⭐ (depuis mes_commandes.php)
+7. Client laisse un avis  (depuis mes_commandes.php)
         ↓
 8. Nutritionniste valide l'avis (nutritionniste/avis.php)
 ```
 
 ---
 
-## 🔐 Sécurité
+##  Sécurité
 
 - ✅ Mots de passe hashés bcrypt (`password_hash`)
 - ✅ Requêtes PDO préparées (anti-injection SQL)
@@ -177,7 +177,7 @@ benna/
 
 ---
 
-## 💡 Clé technique — Pourquoi BASE ?
+## Clé technique — Pourquoi BASE ?
 
 Apache ne comprend pas les redirections relatives comme `../../view/admin/`.
 Le fichier `config/app.php` détecte automatiquement l'URL complète :
