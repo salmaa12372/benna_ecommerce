@@ -1,0 +1,138 @@
+/* PAGE HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    font-family: 'Playfair Display';
+}
+
+.page-header p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.badge-user {
+    background: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 26px;
+}
+
+.stat.success { border-left: 4px solid #2d6a4f; }
+.stat.warning { border-left: 4px solid #f59e0b; }
+.stat.danger  { border-left: 4px solid #ef4444; }
+
+/* GRID */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* STOCK */
+.stock-item {
+    margin-bottom: 12px;
+}
+
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.progress {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress-bar.success { background: #2d6a4f; }
+.progress-bar.warning { background: #f59e0b; }
+.progress-bar.danger  { background: #ef4444; }
+
+/* ORDERS */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.order-item small {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn.primary { background: var(--primary); color: white; }
+.btn.success { background: #2d6a4f; color: white; }
+.btn.blue { background: #3b82f6; color: white; }
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.tag.danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ALERT CARD */
+.alert-card {
+    border-left: 4px solid #ef4444;
+}
+
+/* EMPTY */
+.empty {
+    color: var(--muted);
+    font-size: 14px;
+}

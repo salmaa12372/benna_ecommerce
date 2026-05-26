@@ -1,0 +1,36 @@
+/* stylepanier.css — cart, panier, payment, product detail */
+.panier-wrap,.pay-page,.detail-page,.profil-page,.cmd-page,.conseils-page{padding-top:96px;min-height:80vh}
+/* CART ITEMS */
+.cart-item{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow-card);border-radius:18px;transition:box-shadow .3s}
+.cart-item:hover{box-shadow:0 10px 32px rgba(0,0,0,.1)}
+.cart-item img{border-radius:12px;object-fit:cover}
+.checkout-btn{background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;font-family:var(--font-body);font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:14px;cursor:pointer;transition:transform .25s var(--ease-bounce),box-shadow .25s;width:100%;padding:.88rem;border:none;font-size:.92rem}
+.checkout-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(30,100,50,.3)}
+/* PAYMENT */
+.method-card{border:2px solid var(--border);border-radius:16px;background:var(--card);transition:border-color .2s,transform .2s;cursor:pointer}
+.method-card:hover{border-color:var(--green-light);transform:translateY(-2px)}.method-card.selected{border-color:var(--green);background:color-mix(in oklab,var(--green) 7%,var(--card))}
+.method-icon{font-size:2.1rem;display:block;margin-bottom:.4rem}.method-label{font-family:var(--font-display);font-size:.88rem;color:var(--fg);font-weight:500}
+.pay-btn{background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;font-family:var(--font-body);font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:14px;cursor:pointer;transition:transform .25s var(--ease-bounce),box-shadow .25s;width:100%;padding:1rem;border:none;font-size:1rem}
+.pay-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(30,100,50,.3)}
+/* EMPTY */
+.empty-box{text-align:center;padding:5rem 2rem}.empty-box .ei{font-size:5rem;margin-bottom:1rem;display:block}
+.empty-box h2{font-family:var(--font-display);font-size:1.85rem;font-weight:300;margin-bottom:.6rem}
+/* DETAIL */
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0 3rem;align-items:start}
+@media(max-width:780px){.detail-grid{grid-template-columns:1fr}}
+.detail-img{border-radius:22px;overflow:hidden;box-shadow:0 12px 50px rgba(0,0,0,.14)}
+.detail-img img{width:100%;aspect-ratio:1;object-fit:cover;display:block;transition:transform .6s ease}
+.detail-img:hover img{transform:scale(1.04)}
+.detail-info h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:400;margin:0 0 .5rem}
+.detail-price{font-family:var(--font-display);font-size:1.85rem;font-weight:500;color:var(--gold);margin:.5rem 0 1.1rem}
+.detail-desc{color:var(--muted);line-height:1.8;font-size:.93rem;margin-bottom:1.5rem;font-weight:300}
+.add-btn{width:100%;padding:1rem 1.5rem;border:none;border-radius:16px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;font-family:var(--font-body);font-size:.92rem;font-weight:700;cursor:pointer;transition:transform .25s var(--ease-bounce),box-shadow .25s;letter-spacing:.04em;text-transform:uppercase;margin-top:.8rem}
+.add-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(30,100,50,.3)}.add-btn:disabled{background:var(--border);color:var(--muted);cursor:not-allowed;transform:none}
+.qty-ctrl{width:36px;height:36px;border:2px solid var(--green);background:none;border-radius:50%;cursor:pointer;font-size:1.05rem;color:var(--green);display:flex;align-items:center;justify-content:center;transition:all .2s;font-weight:700;line-height:1}
+.qty-ctrl:hover{background:var(--green);color:white}
+.avis-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 20px;margin-bottom:10px;box-shadow:var(--shadow-card);transition:box-shadow .3s}
+.avis-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.1)}
+.sim-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;color:var(--fg);transition:transform .3s,box-shadow .3s}
+.sim-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.13)}
+.sim-card img{width:100%;height:130px;object-fit:cover}.sim-body{padding:.9rem 1rem}
+.sim-name{font-family:var(--font-display);font-size:.93rem;margin:0 0 .2rem}.sim-price{color:var(--gold);font-weight:600;font-size:.86rem}

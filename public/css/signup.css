@@ -1,0 +1,167 @@
+/* public/css/signup.css */
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* ── Back button ── */
+.btn-home-back {
+    position: fixed;
+    top: 1.2rem;
+    left: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .5rem 1.1rem;
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: .88rem;
+    font-family: 'Playfair Display', serif;
+    transition: background .2s;
+    z-index: 100;
+}
+.btn-home-back:hover { background: rgba(255,255,255,.28); }
+
+/* ── Card wrapper ── */
+.auth-wrap {
+    width: 100%;
+    max-width: 460px;
+    background: #fdf6e3;
+    border-radius: 24px;
+    box-shadow: 0 32px 80px rgba(0,0,0,.25);
+    overflow: hidden;
+}
+
+/* ── Hero banner ── */
+.auth-hero {
+    background: linear-gradient(135deg, #1b4332, #2d6a4f);
+    color: white;
+    text-align: center;
+    padding: 2.4rem 2rem 2rem;
+}
+.auth-hero-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border-radius: 14px;
+    margin-bottom: .8rem;
+    background: rgba(255,255,255,.1);
+    padding: .5rem;
+}
+.auth-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 0 0 .2rem;
+}
+.auth-hero p { opacity: .75; margin: .3rem 0 0; font-size: .92rem; }
+
+/* ── Tabs ── */
+.auth-tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    background: white;
+}
+.auth-tab {
+    flex: 1;
+    padding: .9rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #9ca3af;
+    border: none;
+    background: none;
+    transition: color .2s;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+.auth-tab.active { color: #2d6a4f; border-bottom-color: #2d6a4f; }
+
+/* ── Body ── */
+.auth-body { padding: 2rem; }
+.auth-panel { display: none; }
+.auth-panel.active { display: block; }
+
+/* ── Form fields ── */
+.frow { margin-bottom: 1.1rem; }
+.frow label {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: .92rem;
+    color: #1b4332;
+    margin-bottom: .35rem;
+}
+.frow input {
+    width: 100%;
+    padding: .75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .97rem;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+.frow input:focus {
+    border-color: #2d6a4f;
+    box-shadow: 0 0 0 3px rgba(45,106,79,.12);
+}
+
+/* ── Submit button ── */
+.btn-auth {
+    width: 100%;
+    padding: .9rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2d6a4f, #1b4332);
+    color: white;
+    transition: transform .2s, box-shadow .2s;
+}
+.btn-auth:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(45,106,79,.3);
+}
+
+/* ── Flash messages ── */
+.flash {
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    text-align: center;
+}
+.flash.error   { background: #fff0ee; color: #8B2500; border: 1px solid #fca5a5; }
+.flash.success { background: #f0fdf4; color: #065f46; border: 1px solid #6ee7b7; }
+
+/* ── Hint & demo box ── */
+.form-hint { text-align: center; margin-top: 1rem; font-size: .86rem; color: #9ca3af; }
+.form-hint a { color: #2d6a4f; text-decoration: none; font-weight: 600; }
+.demo-box {
+    background: #f0fdf4;
+    border-radius: 10px;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    font-size: .78rem;
+    color: #6b7280;
+    border: 1px solid #d1fae5;
+}
+.demo-box strong { display: block; color: #1b4332; margin-bottom: .3rem; font-size: .82rem; }
+.demo-row { display: flex; justify-content: space-between; padding: .15rem 0; }

@@ -1,0 +1,384 @@
+/* =========================
+   HERO SHOP
+========================= */
+.hero-shop {
+    padding: 70px 0 60px;
+    background: linear-gradient(145deg, #0f2e1f, #1c3d2a, #2c2c1f);
+    color: white;
+    text-align: center;
+}
+
+.hero-shop h1 {
+    font-size: 2.8rem;
+    margin-bottom: 7px;
+}
+
+.hero-shop p {
+    opacity: 0.8;
+}
+html{
+    font-family: var(--font-body);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.shop-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .shop-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.filters-sidebar {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+    color: #ebf0dd;
+}
+
+.filter-group h4 {
+    margin-bottom: 10px;
+     color: rgba(237, 240, 233, 0.966);
+    font-size: 0.9rem;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.reset-filters {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reset-filters:hover {
+    color: rgba(26, 27, 26, 0.322);
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.product-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: block;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* INFO */
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stock-status {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.regime-status {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+/* BUTTON */
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #1b5e20;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.top-bar {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background: #19401b;
+    color: white;
+}
+
+/* =========================
+   CUSTOM BOX
+========================= */
+.custom-box {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #a9d0ac, #516552);
+    color: rgb(26, 25, 25);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.btn-box {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: white;
+    color: #1c361e;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* =========================
+   TRUST ICONS
+========================= */
+.trust-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.trust-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FLOATING CART
+========================= */
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffb300;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.floating-cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* =========================
+   CART MODAL
+========================= */
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.cart-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    width: 300px;
+}
+
+
+
+
+/* =========================
+   PREBUILT BOXES
+========================= */
+
+/* =========================
+   PREBUILT BOXES
+========================= */
+.prebuilt-section {
+  text-align: center;
+  padding: 48px 32px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.prebuilt-section h2 {
+  font-size: 1.6rem;
+  color: #2f5d3a;
+  margin-bottom: 6px;
+}
+
+.prebuilt-section .subtitle {
+  color: #6b7280;
+  margin-bottom: 36px;
+}
+
+.prebuilt-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 40px;
+}
+
+.prebuilt-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  min-width: 80px;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.prebuilt-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #2f5d3a;
+  transition: background 0.2s, color 0.2s;
+}
+
+.prebuilt-card span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+.dark .prebuilt-card span {
+  color: #ebf0f7;
+}
+
+.prebuilt-card:hover {
+  transform: translateY(-5px);
+}
+
+.prebuilt-card:hover .prebuilt-icon {
+  color: #fff;
+}
+.dark .prebuilt-card.highlight {
+    color:floralwhite;
+}
+
+.prebuilt-card.highlight .prebuilt-icon {
+  color: #fff;
+}
+
+.prebuilt-card.highlight span {
+  font-weight: 600;
+}
+body.dark .prebuilt-card {
+    background: #141f16 !important;
+    border-color: #2a3d2c !important;
+}
+
+body.dark .custom-box {
+    background: #141f16 !important;
+    border-color: #2a3d2c !important;
+}
+body.dark .custom-box h2 {
+    color:floralwhite !important;
+}
+
+body.dark .custom-box p {
+    color: #9fbc8f !important;
+}
+
+body.dark .trust-item {
+    background: #141f16 !important;
+    border-color: #2a3d2c !important;
+}
+
+
+
