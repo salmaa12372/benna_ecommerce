@@ -13,7 +13,7 @@ Copier le dossier dans:
 
 ### 2. Créer la base de données
 - Ouvrir http://localhost/phpmyadmin
-- Créer une base `benna_db`
+- Créer une base `db_benna`
 - Importer `config/schema.sql`
 
 ### 3. Accéder au projet
@@ -196,4 +196,4 @@ Cela fonctionne sur n'importe quel serveur XAMPP/LAMP sans configuration.
 
 ---
 
-*© 2026 Benna / benna — Projet académique Génie Logiciel*
+*© 2026 Benna / بنة — Projet académique pfa Génie Logiciel*
